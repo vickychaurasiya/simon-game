@@ -58,7 +58,6 @@ function btnpressed() {
     userflash(btn);
     userColor = btn.getAttribute("id");
     userSequence.push(userColor);
-    console.log(userSequence);
     checkAns(userSequence.length - 1);
 };
 let allBtns = document.querySelectorAll(".btn");
@@ -67,7 +66,7 @@ for (btn of allBtns) {
 }
 
 function reset() {
-    started == false;
+    started = false;
     gameSequence = [];
     userSequence = [];
     level = 0;
